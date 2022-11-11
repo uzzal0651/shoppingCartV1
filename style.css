@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Limbu&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Noto Sans Limbu", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding: 4% 0%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+.cart-box {
+  width: 339px;
+  padding: 48px 0px;
+  background: #3d3c37;
+  border: 2px solid #575134;
+  text-align: center;
+  margin: 1rem;
+}
+.cart-box img {
+  margin-bottom: 48px;
+}
+.cart-box h2 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #efecdd;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+.cart-box h3 {
+  font-weight: normal;
+  font-size: 16px;
+  color: #fffffd;
+  margin-bottom: 48px;
+  letter-spacing: 1px;
+}
+.cart-box h3 span {
+  color: #f2d028;
+}
+.btn-cart {
+  width: 154px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+  background: #d9b504;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #110f06;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cart-pan {
+  position: fixed;
+  width: 559px;
+  height: 100%;
+  padding-top: 48px;
+  background: #3d3c37;
+  top: 0;
+  right: -100%;
+  transition: 0.5s;
+}
+
+@keyframes example {
+  from {
+    right: -100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes example2 {
+  from {
+    right: 0%;
+  }
+  to {
+    right: -100%;
+  }
+}
+
+.show {
+  animation: example normal forwards ease-in-out;
+  animation-duration: 0.5s;
+}
+.hide {
+  animation: example2 normal forwards ease-in-out;
+  animation-duration: 0.5s;
+}
+.btn-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+  /* identical to box height */
+
+  color: #dfce78;
+}
+.cart-pan-inner {
+  width: 559px;
+  height: 432px;
+  background: #373734;
+  border-top: 1px solid #53524d;
+  border-bottom: 1px solid #53524d;
+}
+.cart-table thead th {
+  width: 12%;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fed300;
+  text-align: center;
+  font-weight: normal;
+}
+.btn-remove {
+  display: block;
+  width: 85px;
+  height: 32px;
+  background: #d9b504;
+  border: 0px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #020202;
+  letter-spacing: 1px;
+}
+.cart-number {
+  width: 79px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0b0b00;
+  text-align: center;
+  background: #b6b69e;
+  border: 0;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+table {
+  border-collapse: collapse;
+}
+tbody tr td {
+  border-top: 1px solid #53524d;
+  color: #efecdd;
+  column-gap: 0;
+  border-spacing: 0;
+  padding: 24px 0px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+table thead th {
+  padding: 16px 0px;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+.cart-table tfoot tr td {
+  width: 12%;
+  column-gap: 0;
+  border-spacing: 0;
+  padding: 24px 0px;
+  text-align: right;
+  color: #fed300;
+  font-weight: bold;
+  border-top: 1px solid #53524d;
+  font-weight: normal;
+  letter-spacing: 1px;
+}
+
+.fakecontainer {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background: green;
+}
